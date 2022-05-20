@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #212529;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top:0;
+  overflow:hiddne;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: orange;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#login{
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+#login {
+  border: 1px solid orange;
+}
+
+#login a {
+  color: orange;
+}
+
+/* styling search bar */
+.search input[type=text]{
+  width:240px;
+  height:25px;
+  border-radius:4px;
+  border: none;
+}
+
+.search{
+  margin: 5px;
+}
+
+.search button{
+  background-color: #1d1f1d;
+  color: orange;
+  float: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+#responsive-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#responsive-icon .bar1,.bar2,.bar3 {
+  width: 35px;
+  height: 2.5px;
+  background-color: orange;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  background-color:#222422;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.content{
+  padding:15px 20px;
+  right: 50%;
+}
+
+h1{
+  color:whitesmoke; 
+  padding-top:40px;
+}
+
+p{
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  nav .nav-right, .nav-left {
+    display: none;
+  }
+  #responsive-icon {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .search input[type=text]{
+    width: 480px;
+  }
+}
+
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  /* CSS here */
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  /* CSS here */
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  /* CSS here */
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  /*  CSS here */
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  /* CSS here */
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+  /* CSS here */
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  /* CSS here */
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px){
+  /* CSS here */
+}
