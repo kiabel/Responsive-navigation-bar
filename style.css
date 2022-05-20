@@ -77,7 +77,6 @@ ul li:hover {
   color: orange;
 }
 
-/* styling search bar */
 .search input[type=text]{
   width:240px;
   height:25px;
